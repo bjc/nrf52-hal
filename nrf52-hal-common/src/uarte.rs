@@ -380,7 +380,6 @@ pub struct Pins {
     pub rts: Option<Pin<Output<PushPull>>>,
 }
 
-
 #[derive(Debug)]
 pub enum Error {
     TxBufferTooLong,
@@ -390,7 +389,6 @@ pub enum Error {
     Timeout(usize),
     BufferNotInRAM,
 }
-
 
 pub trait Instance: Deref<Target = uarte0::RegisterBlock> {}
 

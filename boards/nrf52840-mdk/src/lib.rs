@@ -252,6 +252,9 @@ pub struct Board {
 
     /// nRF52 peripheral: I2S
     pub I2S: nrf52::I2S,
+
+    /// nRF52 peripheral: UARTE1
+    pub UARTE1: nrf52::UARTE1,
 }
 
 impl Board {
@@ -439,6 +442,7 @@ impl Board {
             PWM2: p.PWM2,
             RTC2: p.RTC2,
             I2S: p.I2S,
+            UARTE1: p.UARTE1,
         }
     }
 }
