@@ -322,8 +322,13 @@ impl Board {
                 rts: None,
             },
             UartParity::EXCLUDED,
-            UartBaudrate::BAUD115200,
+            UartBaudrate::BAUD230400,
         );
+        /*
+        BAUD230400,
+        BAUD250000,
+        BAUD921600,
+             */
 
         Board {
             cdc: cdc_uart,
