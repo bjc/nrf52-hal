@@ -50,7 +50,7 @@ pub use uarte0::{
 ///   are disabled before using `Uarte`. See product specification:
 ///     - nrf52832: Section 15.2
 ///     - nrf52840: Section 6.1.2
-pub struct Uarte<T>(T);
+pub struct Uarte<T>(pub T);
 
 impl<T> Uarte<T> where T: Instance {
     pub fn new(uarte: T, mut pins: Pins, parity: Parity, baudrate: Baudrate) -> Self {
